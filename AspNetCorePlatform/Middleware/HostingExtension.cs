@@ -9,6 +9,7 @@
 
         public static WebApplication ConfigurationPipeLine(this WebApplication app)
         {
+            app.MapGet("/", () => "Hello world");
             return app;
         }
     }
